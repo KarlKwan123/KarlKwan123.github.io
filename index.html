@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>豆魂一发社 · 广州芳村二次元拼豆手作体验空间</title>
+  <meta name="description" content="豆魂一发社，广州荔湾区芳村东漖街二次元拼豆DIY体验空间，手作治愈·二次元同好聚集地。" />
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --primary:#7c5cbf;
+      --accent:#f0a500;
+      --pink:#e85d9c;
+      --bg:#faf8f5;
+      --card:#fff;
+      --text:#333;
+      --muted:#888;
+      --border:#e8e4dc;
+      --radius:16px;
+      --shadow:0 8px 40px rgba(124,92,191,.18);
+    }
+    body{
+      font-family:"PingFang SC","Microsoft YaHei",sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.7;
+      min-height:100vh;
+      display:flex;flex-direction:column;
+    }
+    main{
+      flex:1;
+      display:flex;align-items:center;justify-content:center;
+      padding:36px 20px;
+    }
+    .card{
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:36px 32px;
+      max-width:520px;
+      width:100%;
+      text-align:center;
+    }
+    .logo-img{
+      width:120px;
+      margin:0 auto 8px;
+      display:block;
+    }
+    .tagline{
+      color:var(--muted);
+      font-size:.85rem;
+      margin-bottom:6px;
+    }
+    .brand-name{
+      font-size:1.6rem;
+      font-weight:800;
+      background:linear-gradient(135deg,var(--primary),var(--pink));
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+      background-clip:text;
+      margin-bottom:6px;
+    }
+    .divider{
+      width:48px;height:3px;
+      background:linear-gradient(90deg,var(--primary),var(--pink));
+      border-radius:2px;
+      margin:18px auto 18px;
+    }
+    .qr-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:10px;
+      margin-bottom:22px;
+    }
+    .qr-item{
+      background:var(--bg);
+      border-radius:12px;
+      padding:12px 6px;
+      text-align:center;
+    }
+    .qr-item img{
+      width:100%;
+      max-width:140px;
+      border-radius:8px;
+      margin:0 auto 8px;
+    }
+    .qr-label{
+      font-size:.72rem;
+      font-weight:600;
+      color:var(--text);
+      line-height:1.3;
+    }
+    .qr-sub{
+      font-size:.62rem;
+      color:var(--muted);
+      margin-top:2px;
+      line-height:1.3;
+    }
+    .info{
+      background:var(--bg);
+      border-radius:12px;
+      padding:16px 20px;
+      text-align:left;
+      margin-bottom:16px;
+    }
+    .info-row{
+      display:flex;align-items:flex-start;
+      gap:8px;
+      font-size:.85rem;
+      color:var(--text);
+      margin-bottom:8px;
+    }
+    .info-row:last-child{margin-bottom:0}
+    .info-icon{flex-shrink:0;width:20px;text-align:center}
+    .info-label{
+      color:var(--muted);
+      font-size:.78rem;
+      margin-right:4px;
+    }
+    .icp{
+      font-size:.7rem;
+      color:#bbb;
+    }
+    .icp a{color:#bbb;text-decoration:none}
+    .icp a:hover{color:var(--primary)}
+    @media(max-width:420px){
+      .card{padding:28px 18px}
+      .qr-grid{gap:8px}
+      .qr-item{padding:10px 4px}
+      .qr-item img{max-width:100px}
+      .brand-name{font-size:1.4rem}
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="card">
+      <img src="images/logo.png" alt="豆魂一发社 Logo" class="logo-img" />
+      <div class="brand-name">豆魂一发社</div>
+      <div class="tagline">广州芳村 · 二次元拼豆手作体验空间</div>
+      <div class="divider"></div>
+
+      <div class="qr-grid">
+        <div class="qr-item">
+          <img src="images/wechat.png" alt="微信二维码" />
+          <div class="qr-label">💬 微信</div>
+          <div class="qr-sub">gachasoul</div>
+        </div>
+        <div class="qr-item">
+          <img src="images/dianping.jpg" alt="大众点评二维码" />
+          <div class="qr-label">🎟️ 大众点评</div>
+          <div class="qr-sub">团购下单</div>
+        </div>
+        <div class="qr-item">
+          <img src="images/xiaohongshu.jpg" alt="小红书二维码" />
+          <div class="qr-label">📖 小红书</div>
+          <div class="qr-sub">912146288</div>
+        </div>
+      </div>
+
+      <div class="info">
+        <div class="info-row">
+          <span class="info-icon">📍</span>
+          <span><span class="info-label">地址</span>广州荔湾芳村东漖南路123号3楼F23（坑口地铁D口）</span>
+        </div>
+        <div class="info-row">
+          <span class="info-icon">🕐</span>
+          <span><span class="info-label">营业</span>工作日 11:00-20:30 / 周末 10:30-21:00（周末不休）</span>
+        </div>
+        <div class="info-row">
+          <span class="info-icon">🎨</span>
+          <span><span class="info-label">项目</span>拼豆DIY · 水晶珠宝 · 二次元周边</span>
+        </div>
+      </div>
+
+      <div class="icp">
+        <a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备2026028510号-1</a>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
